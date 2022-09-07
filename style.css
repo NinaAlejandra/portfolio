@@ -7,6 +7,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+h1 {
+  display: inline;
+}
+
 a {
   text-decoration: none;
   cursor: pointer;
@@ -35,14 +39,10 @@ p {
 }
 
 .nav-container {
-  display: flex;
   justify-content: space-between;
   align-items: center;
   height: 62px;
-}
-
-.navbar .menu-items {
-  display: flex;
+  display: block;
 }
 
 .navbar .nav-container li {
@@ -59,12 +59,6 @@ p {
 
 .navbar .nav-container a:hover {
   font-weight: bolder;
-}
-
-.nav-container {
-  display: block;
-  position: relative;
-  height: 60px;
 }
 
 .nav-container .checkbox {
@@ -118,12 +112,11 @@ p {
   padding-top: 120px;
   box-shadow: inset 0 2000px rgba(203, 156, 206, 90%);
   height: 74vh;
-  width: 50%;
+  width: 100%;
   transform: translate(-150%);
   display: flex;
   flex-direction: column;
   margin-left: -40px;
-
   transition: transform 0.5s ease-in-out;
   text-align: center;
   position: relative;
@@ -141,6 +134,7 @@ p {
   right: 15px;
   font-size: 1.2rem;
   color: #ff8e80;
+  margin-top: 12px;
 }
 
 .nav-container input[type="checkbox"]:checked ~ .menu-items {
@@ -502,6 +496,10 @@ p {
     margin: 0 auto;
   }
 
+  .navbar .menu-items {
+    width: 50%;
+  }
+
   .description-container {
     max-width: 327px;
     min-height: 160px;
@@ -538,6 +536,11 @@ p {
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 33% 33% 33%;
   }
+
+  .other-projects-container {
+    display: grid;
+    justify-content: center;
+  }
 }
 
 @media (min-width: 1920px) {
@@ -555,10 +558,5 @@ p {
 
   li {
     font-size: x-large;
-  }
-
-  .other-projects-container {
-    display: grid;
-    justify-content: center;
   }
 }
