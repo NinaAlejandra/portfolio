@@ -236,13 +236,17 @@ p {
   margin: 0;
 }
 
+.abba {
+  margin-top: 200px;
+}
+
 .profile-picture {
   position: absolute;
   width: 180px;
   height: 180px;
   right: 0;
   bottom: 1%;
-  background-image: url("./images/IMG_7313.jpg");
+  background-image: url("./images/IMG_1282.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: cover;
