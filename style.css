@@ -109,11 +109,9 @@ p {
   display: flex;
   flex-direction: column;
   width: 120vw;
-  /*width:100%; media query*/
   height: 115vh;
   min-height: 200px;
   margin-left: -100px;
-  /* margin-left: -550px; flytta till media query */
   padding: 4rem 0;
   text-align: center;
   position: relative;
