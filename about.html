@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Experience</title>
+    <title>Erfarenhet</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,158 +14,197 @@
     />
   </head>
   <body>
-    <!-- ********** Navbar to homepage and experiencepage ********** -->
-    <nav>
-      <div class="navbar">
-        <div class="container nav-container">
-          <input class="checkbox" type="checkbox" name="" id="" />
-          <div class="hamburger-lines">
-            <span class="line line1"></span>
-            <span class="line line2"></span>
-            <span class="line line3"></span>
-          </div>
-          <div class="logo">
-            <h1>Nina Rivera</h1>
-          </div>
-          <div class="menu-items">
-            <ul class="menu">
-              <li><a href="./index.html">Home</a></li>
-              <li><a href="./about.html">Experience</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </nav>
+
+<!-- ********** Navbar ********** -->
+<nav class="navbar">
+  <div class="container nav-container">
+    <div class="logo">
+      <h1>Nina Rivera</h1>
+    </div>
+
+    <input class="checkbox" type="checkbox" id="nav-toggle" />
+    <label for="nav-toggle" class="hamburger-lines">
+      <span class="line line1"></span>
+      <span class="line line2"></span>
+      <span class="line line3"></span>
+    </label>
+
+    <div class="menu-items">
+      <ul class="menu">
+        <li><a href="./index.html">Hem</a></li>
+        <li><a href="./about.html">Erfarenhet</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
     <!-- ********** Header ********** -->
     <header class="second-header">
       <div class="header-container">
         <div class="header-text">
-          <h1 class="header-text-career"><span>Work experience</span></h1>
-          <h2 class="header-text-background">and education</h2>
+          <h1 class="header-text-career">Arbetslivs-</h1>
+          <h1 class="header-text-career">erfarenhet</h1>
+          <h2 class="header-text-background">och utbildning</h2>
         </div>
         <div class="profile-picture"></div>
       </div>
     </header>
+
     <main class="main-container">
-      <!-- ********** Summary section ********** -->
+      <!-- ********** Sammanfattning ********** -->
       <section class="about-me-section">
         <div class="container">
           <p class="about-me-text">
             <span class="line" aria-hidden="true"></span>
             <span class="dot" aria-hidden="true"></span>
-            The common thread in my professional life has been education and
-            service. My goal in my next role is to of course use my newly
-            acquired knowledge in programming, but also take advantage of my
-            pedagogical background.
+            Jag har gått från klassrummet till kodens värld – och tar med mig
+            min erfarenhet av undervisning, struktur och problemlösning in i
+            programmering. I nästa steg vill jag fortsätta växa som utvecklare
+            och bidra med både teknisk kompetens och pedagogisk erfarenhet.
           </p>
         </div>
       </section>
-      <!-- ********** Work experience section********** -->
+
+      <!-- ********** Arbetslivserfarenhet ********** -->
       <section class="work-section">
         <div class="container">
           <div class="work-heading-container">
-            <h1 class="headings">work experience</h1>
+            <h2 class="headings">Arbetslivserfarenhet</h2>
           </div>
-          <div>
+
+          <article>
             <p class="job-and-school">
-              Devtalent at Diversity4Tech 2023-02-06 - 2023-07-29
+              Devtalent – Diversity4Tech (2023-02 – 2023-07)
             </p>
             <p>
-              I was part of a new program which intends to increase diversity in
-              a workplace by taking in people with different types of
-              backgrounds and experiences. In this program, I had the
-              opportunity to work with SCSS, Typescript and React, some EPI and
-              learn more about the agile method of working. We also got to learn
-              some back end in the program but unfortunately, I did not have the
-              possibility of using it in my work at the time but I am now
-              studying C# and hope to have the possibility to use it in my
-              future day-to-day work. I learned a lot about how to work in an
-              agile work culture as well, and what it means to be part of a
-              team.
+              Deltog i ett program som främjar mångfald inom tech. Arbetade med
+              SCSS, Typescript och React och lärde mig mer om agil
+              arbetsmetodik. Jag påbörjade även backend-studier i C# som jag därefter
+              fortsatte att utveckla.
             </p>
+          </article>
+
+          <article>
             <p class="job-and-school">
-              Mentor/teacher at Sandbyhovsskolan 2020-08-10 - 2021-06-16
+              Mentor/Lärare – Sandbyhovsskolan (2020-08 – 2021-06)
             </p>
             <p>
-              As a mentor, I had the shared responsibilities of a class of 28
-              students. I handled conflicts within the class, was responsible
-              for group activities with my co-mentor, and maintained contact
-              with parents and other school resources if needed. As a language
-              teacher, I did all the planning for my three classes of different
-              levels, graded and gave feedback for further development. This
-              position required a lot of structure, stress management, and
-              flexibility.
+              Mentor för en klass på 28 elever med ansvar för planering,
+              konflikthantering och kontakt med vårdnadshavare. Undervisade i
+              spanska på flera nivåer. Rollen krävde struktur, flexibilitet och
+              god kommunikation.
             </p>
+          </article>
+
+          <article>
             <p class="job-and-school">
-              Teacher at Lärande AB 2017-12-04 - 2020-06-30
+              Lärare – Lärande AB (2017-12 – 2020-06)
             </p>
             <p>
-              At Lärande AB, I had different roles. At first, I began as a high
-              school teacher teaching history, religion, and social sciences.
-              When the temp job was over, I got hired by the company's lower
-              grades school. Here I held classes in Spanish and civic education
-              for all ages between grades 6 and 9. This was my first
-              introduction to teaching after my university studies. It taught me
-              how to lead, how to be quick on my feet, and how to problem-solve.
+              Arbetade både på gymnasiet (historia, religion, samhällskunskap)
+              och på högstadiet (spanska, samhällskunskap). Utvecklade mina
+              färdigheter i ledarskap, pedagogik och problemlösning i
+              klassrummet.
             </p>
+          </article>
+
+          <article>
             <p class="job-and-school">
-              Attraction host at Kolmården Zoo 2016-04-02 - 2018-07-31
+              Attraktionsvärd – Kolmårdens djurpark (2016-04 – 2018-07)
             </p>
             <p>
-              I worked for a couple of seasons at Kolmården Zoo as part of their
-              service personnel. I handled all of the attractions at the zoo but
-              mostly worked on the cable cars and the rollercoaster. The years I
-              worked for Kolmården Zoo gave me an education in service and
-              management. It also taught me how to best communicate with other
-              people.
+              Arbetade säsongsvis med attraktioner som linbanan och berg- och
+              dalbanan. Fick värdefull erfarenhet inom service, säkerhet och
+              kommunikation.
             </p>
-          </div>
+          </article>
         </div>
       </section>
+
+      <!-- ********** Utbildning ********** -->
       <section class="education-section">
         <div class="container">
           <div class="education-heading-container">
-            <h1 class="headings">education</h1>
+            <h2 class="headings">Utbildning</h2>
           </div>
-          <div>
-            <p class="job-and-school">Lexicon September 2023 - Ongoing / Advanced .Net Course</p> 
-               <p>An accelerated course taught by Lexicon, where we learn how to develop
-              IT systems, applications or parts of systems. This course aims to
-              cover system development, Frontend development, Backend
-              programming, full stack and application development within .NET.
-            </p>
-            <p class="job-and-school">Technigo August 2021 - February 2022 / Frontend Bootcamp</p>
-            <p>
-              A fast paced Bootcamp, where we focused on Javascript, React,
-              HTML5, CSS and also did some server-side programming with Node.js.
-              We worked with Agile methodology through weekly sprint planning,
-              check-ins, demos, and reflections. The projects were done
-              individually, in pairs, and in groups.
-            </p>
+
+          <article>
             <p class="job-and-school">
-              Dalarna University January 2016 - August 2017 / Spanish I - III
+              Lexicon (2023-08 – 2024-02) / Avancerad .NET-kurs
             </p>
             <p>
-              I chose to add Spanish as a third subject to teach since its
-              already a native language of mine. Language studies gave me a lot
-              that can benefit me as a programmer, for example, the process
-              through which you learn a human language and a programming
-              language is very similar. I noticed how this benefited me when I
-              studied at the Frontend Bootcamp.
+              Intensivkurs inom systemutveckling med fokus på frontend, backend,
+              fullstack och applikationsutveckling i .NET.
             </p>
+          </article>
+
+          <article>
             <p class="job-and-school">
-              Linköping University August 2011 - January 2016 / Secondary School
-              Teacher Program with a specialization in History and Religion
+              Technigo (2021-08 – 2022-02) / Frontend Bootcamp
             </p>
             <p>
-              Secondary School Teacher Program with a specialization in history
-              and religion. Aside from history and religion, we studied
-              leadership styles, pedagogy, and different teaching methods. We
-              also learned about Special Education and knowledge development.
+              Bootcamp med fokus på Javascript, React, HTML5, CSS och Node.js.
+              Arbetade agilt i sprintar och projekt både individuellt och i
+              grupp.
             </p>
-          </div>
+          </article>
+
+          <article>
+            <p class="job-and-school">
+              Högskolan Dalarna (2016-01 – 2017-08) / Spanska I–III
+            </p>
+            <p>
+              Fördjupade mina kunskaper i spanska som tredje undervisningsämne.
+              Studierna gav insikter i språk- och inlärningsprocesser som också
+              varit värdefulla i min programmeringsresa.
+            </p>
+          </article>
+
+          <article>
+            <p class="job-and-school">
+              Linköpings universitet (2011-08 – 2016-01) / Ämneslärarprogrammet
+            </p>
+            <p>
+              Läste till gymnasielärare med inriktning historia och religion.
+              Kurser i ledarskap, pedagogik, specialpedagogik och didaktik gav
+              en bred bas.
+            </p>
+          </article>
         </div>
       </section>
     </main>
+
+    <!-- ********** Footer ********** -->
+    <footer class="footer">
+      <h2>Kontakt</h2>
+      <p>Nina Rivera</p>
+      <p>+46 73 582 17 08</p>
+      <p>
+        <a href="mailto:ninariveracalderon@outlook.com"
+          >ninariveracalderon@outlook.com</a
+        >
+      </p>
+      <div class="social-media-container">
+        <a
+          href="https://linkedin.com/in/nina-alejandra-rivera-calderon-489471ba/"
+          target="_blank"
+        >
+          <img class="bottom-icon" src="./icons/Group 16.png" alt="LinkedIn" />
+        </a>
+        <a href="https://github.com/NinaAlejandra" target="_blank">
+          <img class="bottom-icon" src="./icons/Group 17.png" alt="GitHub" />
+        </a>
+        <a
+          href="https://stackoverflow.com/users/16650773/nina-alejandra"
+          target="_blank"
+        >
+          <img
+            class="bottom-icon"
+            src="./icons/Group 18.png"
+            alt="StackOverflow"
+          />
+        </a>
+      </div>
+    </footer>
   </body>
 </html>
