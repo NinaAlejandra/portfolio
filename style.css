@@ -46,7 +46,10 @@ p {
 
 .navbar {
   width: 100%;
-  box-shadow: 0 1px 4px rgba(203, 156, 206, 0.919);
+  position: sticky;
+  top: 0;
+  z-index: 4;
+  background-color: #fefcff;
 }
 
 .nav-container {
@@ -66,7 +69,6 @@ p {
   width: 32px;
   top: 20px;
   left: 20px;
-  z-index: 5;
   opacity: 0;
   cursor: pointer;
 }
@@ -77,7 +79,7 @@ p {
   position: absolute;
   top: 17px;
   left: 20px;
-  z-index: 2;
+  z-index: 5;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -116,9 +118,10 @@ p {
   text-align: left;
   position: fixed;
   border-radius: 0 0 12px 12px;
-  transition: transform 0.5s ease-in-out;
+  opacity: 0;
+  transition: transform 0.4s ease-in-out, opacity 0.3s ease-in-out;
   transform: translate(-100%);
-  z-index: 1;
+  z-index: 4;
 
   background: radial-gradient(
     circle at 10% 15%,
@@ -156,6 +159,7 @@ p {
 
 .nav-container input[type="checkbox"]:checked ~ .menu-items {
   transform: translateX(0);
+  opacity: 1;
 }
 
 .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
@@ -204,12 +208,6 @@ p {
   background-size: cover;
   background-position: center;
   position: relative;
-}
-.header-icons {
-  position: absolute;
-  height: 100%;
-  right: 0;
-  display: inline-flex;
 }
 
 .icon,
@@ -583,9 +581,9 @@ p {
   .navbar .menu-items {
     background: radial-gradient(
       circle at 10% 15%,
-      rgba(203, 156, 206, 0.95) 40%,
-      rgba(203, 156, 206, 0.8) 45%,
-      rgba(203, 156, 206, 0.05) 60%,
+      rgba(203, 156, 206, 0.95) 20%,
+      rgba(203, 156, 206, 0.8) 35%,
+      rgba(203, 156, 206, 0.05) 50%,
       rgba(203, 156, 206, 0) 100%
     );
   }
@@ -600,7 +598,7 @@ p {
   }
 
   .header-text iframe {
-    width: 30%;
+    width: 20%;
   }
 
   .about-me-text {
@@ -642,9 +640,5 @@ p {
   }
   li {
     font-size: x-large;
-  }
-
-  .header-text iframe {
-    width: 20%;
   }
 }

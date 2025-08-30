@@ -4,6 +4,15 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Frontend developer with a background as a teacher. Portfolio with projects made with React, .NET and TypeScript"
+    />
+    <meta
+      name="keywords"
+      content="frontend, developer, React, .NET, TypeScript, HTML, CSS, portfolio, pedagogy"
+    />
+
     <title>Erfarenhet</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -32,6 +41,7 @@
           <ul class="menu">
             <li><a href="./index.html">Hem</a></li>
             <li><a href="./about.html">Erfarenhet</a></li>
+            <li><a href="./index.html#contact">Kontakt</a></li>
           </ul>
         </div>
       </div>
@@ -174,11 +184,17 @@
 
     <!-- ********** Footer ********** -->
     <footer class="footer">
-      <h2>Kontakt</h2>
+      <h2 id="contact">KONTAKT</h2>
       <p>Nina Rivera</p>
-      <p><a href="tel:+46735821708">+46 73 582 17 08</a></p>
       <p>
-        <a href="mailto:ninariveracalderon@outlook.com"
+        <a href="tel:+46735821708" aria-label="Call Nina on 0735821708"
+          >+46 73 582 17 08</a
+        >
+      </p>
+      <p>
+        <a
+          href="mailto:ninariveracalderon@outlook.com"
+          aria-label="E-mail Nina on ninariveracalderon@outlook.com"
           >ninariveracalderon@outlook.com</a
         >
       </p>
@@ -186,23 +202,44 @@
         <a
           href="https://linkedin.com/in/nina-alejandra-rivera-calderon-489471ba/"
           target="_blank"
+          aria-label="Open LinkedIn page"
         >
-          <img class="bottom-icon" src="./icons/Group 16.png" alt="LinkedIn" />
+          <img
+            class="bottom-icon"
+            src="./icons/Group 16.png"
+            alt="Link to LinkedIn"
+          />
         </a>
-        <a href="https://github.com/NinaAlejandra" target="_blank">
-          <img class="bottom-icon" src="./icons/Group 17.png" alt="GitHub" />
+        <a
+          href="https://github.com/NinaAlejandra"
+          target="_blank"
+          aria-label="Open Github page"
+        >
+          <img
+            class="bottom-icon"
+            src="./icons/Group 17.png"
+            alt="Link to GitHub"
+          />
         </a>
         <a
           href="https://stackoverflow.com/users/16650773/nina-alejandra"
           target="_blank"
+          aria-label="Open StackOerflow page"
         >
           <img
             class="bottom-icon"
             src="./icons/Group 18.png"
-            alt="StackOverflow"
+            alt="Link to StackOverflow"
           />
         </a>
       </div>
     </footer>
+    <script>
+      document.querySelectorAll(".menu-items a").forEach((link) => {
+        link.addEventListener("click", () => {
+          document.querySelector(".nav-container .checkbox").checked = false;
+        });
+      });
+    </script>
   </body>
 </html>

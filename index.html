@@ -4,6 +4,15 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Frontend developer with a background as a teacher. Portfolio with projects made with React, .NET and TypeScript"
+    />
+    <meta
+      name="keywords"
+      content="frontend, developer, React, .NET, TypeScript, HTML, CSS, portfolio, pedagogy"
+    />
+
     <title>Nina Rivera – Portfolio</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -32,6 +41,7 @@
           <ul class="menu">
             <li><a href="./index.html">Hem</a></li>
             <li><a href="./about.html">Erfarenhet</a></li>
+            <li><a href="#contact">Kontakt</a></li>
           </ul>
         </div>
       </div>
@@ -40,35 +50,6 @@
     <!-- ********** Header ********** -->
     <header class="main-header">
       <div class="header-container">
-        <div class="header-icons">
-          <a
-            href="https://linkedin.com/in/nina-alejandra-rivera-calderon-489471ba/"
-            target="_blank"
-          >
-            <img
-              class="icon"
-              src="./icons/Group 16.png"
-              alt="link to my linkedin page"
-            />
-          </a>
-          <a href="https://github.com/NinaAlejandra" target="_blank">
-            <img
-              class="icon"
-              src="icons/Group 17.png"
-              alt="link to my github page"
-            />
-          </a>
-          <a
-            href="https://stackoverflow.com/users/16650773/nina-alejandra"
-            target="_blank"
-          >
-            <img
-              class="icon"
-              src="icons/Group 18.png"
-              alt="link to my stackoverflow page"
-            />
-          </a>
-        </div>
         <div class="header-text">
           <h3 class="portfolio-text">
             Portfolio:
@@ -79,6 +60,7 @@
           <h3 class="header-text-background">+ pedagogik</h3>
 
           <iframe
+            title="spotify track embed"
             style="border-radius: 12px"
             src="https://open.spotify.com/embed/track/5BckPAYcKEJuYs1eV1BHHe?utm_source=generator"
             width="70%"
@@ -137,20 +119,25 @@
           <section class="all-projects-container">
             <article class="project-container">
               <div class="project-image-container">
-                <a href="https://affirmationer.netlify.app/" target="_blank">
+                <a
+                  href="https://affirmationer.netlify.app/"
+                  target="_blank"
+                  aria-label="open affirmations page"
+                >
                   <h2 class="title-over-image">Affirmationer</h2>
                   <div class="overlay"></div>
                   <img
                     class="project-image"
                     src="./images/affirmations-image.png"
+                    alt="screenshot of affirmations page"
                   />
                 </a>
               </div>
               <div class="description-container">
                 <a
                   href="https://github.com/NinaAlejandra/affirmations"
-                  alt="link to github repo"
                   target="_blank"
+                  aria-label="Open project affirmations in github"
                 >
                   <h2 class="project-link">project affirmations site</h2>
                 </a>
@@ -167,17 +154,22 @@
                 <a
                   href="https://githubtracker-ninaalejandra.netlify.app/"
                   target="_blank"
+                  aria-label="Open github tracker page"
                 >
                   <h2 class="title-over-image">Github Spårare</h2>
                   <div class="overlay"></div>
-                  <img class="project-image" src="./images/github-image.png" />
+                  <img
+                    class="project-image"
+                    src="./images/github-image.png"
+                    alt="screenshot of github tracker page"
+                  />
                 </a>
               </div>
               <div class="description-container">
                 <a
                   href="https://github.com/NinaAlejandra/project-github-tracker"
-                  alt="link to github repo"
                   target="_blank"
+                  aria-label="Open project github tracker in github"
                 >
                   <h2 class="project-link">project git hub tracker</h2>
                 </a>
@@ -199,8 +191,8 @@
               <div class="description-container">
                 <a
                   href="https://github.com/NinaAlejandra/project-guess-who"
-                  alt="link to github repo"
                   target="_blank"
+                  aria-label="Open project guess who in github"
                 >
                   <h2 class="project-link">project guess who</h2>
                 </a>
@@ -229,6 +221,7 @@
                 <a
                   href="https://medium.com/@Niinaa___/coding-to-the-rescue-d775ed714601"
                   target="_blank"
+                  aria-label="Open medium article coding to the rescue"
                 >
                   <h2 class="title-over-image">Coding to the rescue</h2></a
                 >
@@ -236,7 +229,7 @@
                 <img
                   class="project-image"
                   src="./images/coding meme.jpeg"
-                  alt="man being a god vs a dog trying to code"
+                  alt="picture of a man being a god vs a dog trying to code"
                 />
               </div>
               <div class="description-container">
@@ -246,6 +239,7 @@
                   <a
                     href="https://medium.com/@Niinaa___/coding-to-the-rescue-d775ed714601"
                     target="_blank"
+                    aria-label="Open medium article coding to the rescue"
                     ><span class="read-article">>></span></a
                   >
                 </p>
@@ -258,6 +252,7 @@
                 <a
                   href="https://medium.com/@Niinaa___/bootcamp-mental-health-dfa6b8a1b95d"
                   target="_blank"
+                  aria-label="Open medium article Bootcamp + mental health = ?"
                 >
                   <h2 class="title-over-image">Bootcamp + mental health = ?</h2>
                 </a>
@@ -265,7 +260,7 @@
                 <img
                   class="project-image"
                   src="./images/mentalhealth meme.jpeg"
-                  alt="man standing with kaos bakom sig"
+                  alt="picture of a man standing with chaos behind him"
                 />
               </div>
               <div class="description-container">
@@ -275,6 +270,7 @@
                   <a
                     href="https://medium.com/@Niinaa___/bootcamp-mental-health-dfa6b8a1b95d"
                     target="_blank"
+                    aria-label="Open medium article Bootcamp + mental health = ?"
                     ><span class="read-article">>></span></a
                   >
                 </p>
@@ -354,11 +350,17 @@
 
     <!-- ********** Footer ********** -->
     <footer class="footer">
-      <h2>KONTAKT</h2>
+      <h2 id="contact">KONTAKT</h2>
       <p>Nina Rivera</p>
-      <p><a href="tel:+46735821708">+46 73 582 17 08</a></p>
       <p>
-        <a href="mailto:ninariveracalderon@outlook.com"
+        <a href="tel:+46735821708" aria-label="Call Nina on 0735821708"
+          >+46 73 582 17 08</a
+        >
+      </p>
+      <p>
+        <a
+          href="mailto:ninariveracalderon@outlook.com"
+          aria-label="E-mail Nina on ninariveracalderon@outlook.com"
           >ninariveracalderon@outlook.com</a
         >
       </p>
@@ -367,6 +369,7 @@
           <a
             href="https://linkedin.com/in/nina-alejandra-rivera-calderon-489471ba/"
             target="_blank"
+            aria-label="open linkedin page"
           >
             <img
               class="bottom-icon"
@@ -376,7 +379,11 @@
           </a>
         </div>
         <div class="social-media-text">
-          <a href="https://github.com/NinaAlejandra" target="_blank">
+          <a
+            href="https://github.com/NinaAlejandra"
+            target="_blank"
+            aria-label="open github page"
+          >
             <img
               class="bottom-icon"
               src="./icons/Group 17.png"
@@ -388,6 +395,7 @@
           <a
             href="https://stackoverflow.com/users/16650773/nina-alejandra"
             target="_blank"
+            aria-label="open stackoverflow page"
           >
             <img
               class="bottom-icon"
@@ -398,5 +406,12 @@
         </div>
       </div>
     </footer>
+    <script>
+      document.querySelectorAll(".menu-items a").forEach((link) => {
+        link.addEventListener("click", () => {
+          document.querySelector(".nav-container .checkbox").checked = false;
+        });
+      });
+    </script>
   </body>
 </html>
