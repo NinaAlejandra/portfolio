@@ -2,11 +2,14 @@
   box-sizing: border-box;
 }
 
-html, body {
-  overflow-x: clip; 
+html,
+body {
+  overflow-x: clip;
 }
 
-img, iframe, video {
+img,
+iframe,
+video {
   max-width: 100%;
   height: auto;
 }
@@ -54,18 +57,6 @@ p {
 
 .navbar .nav-container li {
   list-style: none;
-}
-
-.navbar .nav-container a {
-  text-decoration: none;
-  color: #fefcff;
-  font-weight: 500;
-  font-size: 2.5rem;
-  padding: 0.7rem;
-}
-
-.navbar .nav-container a:hover {
-  font-weight: bolder;
 }
 
 .nav-container .checkbox {
@@ -144,12 +135,23 @@ p {
   font-weight: 500;
 }
 
-.logo {
+.navbar .menu-items a {
+  color: #fefcff;
+  font-weight: 500;
+  font-size: 2.5rem;
+  padding: 0.7rem;
+}
+
+.navbar .menu-items a:hover {
+  font-weight: bolder;
+}
+
+.navbar .logo a {
   position: fixed;
   right: 15px;
-  font-size: 1.2rem;
+  font-size: 2.5rem;
   color: #ff8e80;
-  margin-top: 12px;
+  margin-top: 3.5px;
 }
 
 .nav-container input[type="checkbox"]:checked ~ .menu-items {
@@ -229,26 +231,25 @@ p {
 .header-text {
   position: absolute;
   top: 15%;
-  width:100%;
+  width: 100%;
   font-family: "Montserrat", sans-serif;
   line-height: 18px;
   letter-spacing: 0.04em;
   color: #ffffff;
   font-size: 50%;
   text-transform: uppercase;
-  left: 0;           
+  left: 0;
   right: 0;
   max-width: 100%;
-  overflow: hidden;
 }
 
 .header-text iframe {
   display: block;
-  width: 100%;        
-  max-width: 600px;   
-  height: 125px;    
+  width: 100%;
+  max-width: 600px;
+  height: 125px;
   border: 0;
-} 
+}
 
 .portfolio-text,
 .name-text {
@@ -462,7 +463,8 @@ p {
   font-weight: bolder;
 }
 
-.all-projects-container, .other-projects-container,
+.all-projects-container,
+.other-projects-container,
 .all-thoughts-container,
 .all-skills-container {
   display: flex;
@@ -532,8 +534,8 @@ p {
   color: #ff8e80;
 }
 @media (min-width: 768px) {
-  .navbar .menu-items {      
-    padding: 3rem 2rem;  
+  .navbar .menu-items {
+    padding: 3rem 2rem;
     background: radial-gradient(
       circle at 20% 30%,
       rgba(203, 156, 206, 0.9) 30%,
@@ -543,12 +545,12 @@ p {
   }
 
   .navbar .menu-items li {
-    font-size: 2rem;     
+    font-size: 2rem;
     margin-bottom: 1.5rem;
   }
 
   .header-text iframe {
-    width: 30%;        
+    width: 50%;
   }
 
   .all-thoughts-container,
@@ -566,8 +568,12 @@ p {
 }
 
 @media (min-width: 1025px) {
-  p { font-size: 20px; }
-  h2 { font-size: 22px; }
+  p {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 22px;
+  }
 
   .container {
     min-width: 768px;
@@ -584,26 +590,37 @@ p {
     );
   }
 
-  .header-text { top: 26%; }
+  .header-text {
+    top: 26%;
+  }
 
   .header-text-career {
     font-size: 2rem;
     margin: 25px 0;
   }
 
-  .about-me-text { padding: 5% 0; }
+  .about-me-text {
+    padding: 5% 0;
+  }
 
   .description-container {
     max-width: 327px;
     min-height: 160px;
   }
 
-  .tag-container { position: absolute; bottom: 0; }
+  .tag-container {
+    position: absolute;
+    bottom: 0;
+  }
 
-  .project-container { max-width: 327px; }
+  .project-container {
+    max-width: 327px;
+  }
 
   .education-section,
-  .work-section { padding: 5% 10%; }
+  .work-section {
+    padding: 5% 10%;
+  }
 
   .job-and-school {
     font-size: larger;
@@ -612,7 +629,14 @@ p {
 }
 
 @media (min-width: 1920px) {
-  p { font-size: clamp(16px, 1.5vw, 22px); }
-  h2, h3 { font-size: xx-large; }
-  li { font-size: x-large; }
+  p {
+    font-size: clamp(16px, 1.5vw, 22px);
+  }
+  h2,
+  h3 {
+    font-size: xx-large;
+  }
+  li {
+    font-size: x-large;
+  }
 }
