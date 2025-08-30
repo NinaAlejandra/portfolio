@@ -599,6 +599,10 @@ p {
     margin: 25px 0;
   }
 
+  .header-text iframe {
+    width: 30%;
+  }
+
   .about-me-text {
     padding: 5% 0;
   }
@@ -638,5 +642,9 @@ p {
   }
   li {
     font-size: x-large;
+  }
+
+  .header-text iframe {
+    width: 20%;
   }
 }
